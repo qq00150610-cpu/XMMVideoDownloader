@@ -12,8 +12,10 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import okhttp3.RequestBody.Companion.toRequestBody
 import java.util.concurrent.TimeUnit
 
 class ParseFragment : Fragment() {
@@ -22,12 +24,13 @@ class ParseFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val client = OkHttpClient.Builder()
-        .connectTimeout(15, TimeUnit.SECONDS)
-        .readTimeout(15, TimeUnit.SECONDS)
+        .connectTimeout(30, TimeUnit.SECONDS)
+        .readTimeout(30, TimeUnit.SECONDS)
         .build()
 
-    private var currentVideoUrl: String? = null
-    private var currentTweetText: String? = null
+    private var currentVideoUrls: List<TweetParser.VideoQuality> = emptyList()
+    private var currentTitle: String? = null
+    private var currentThumbnail: String? = null
     private var downloadManager: DownloadManager? = null
 
     override fun onCreateView(
@@ -52,16 +55,18 @@ class ParseFragment : Fragment() {
         }
 
         binding.btnPlay.setOnClickListener {
-            currentVideoUrl?.let { url ->
+            if (currentVideoUrls.isNotEmpty()) {
+                val url = currentVideoUrls.first().url
                 val intent = Intent(requireContext(), PlayerActivity::class.java)
                 intent.putExtra("video_urls", arrayOf(url))
-                intent.putExtra("video_titles", arrayOf(currentTweetText ?: getString(R.string.video_player)))
+                intent.putExtra("video_titles", arrayOf(currentTitle ?: getString(R.string.video_player)))
                 startActivity(intent)
             }
         }
 
         binding.btnDownload.setOnClickListener {
-            currentVideoUrl?.let { url ->
+            if (currentVideoUrls.isNotEmpty()) {
+                val url = currentVideoUrls.first().url
                 startDownload(url)
             }
         }
@@ -77,8 +82,7 @@ class ParseFragment : Fragment() {
     }
 
     private fun parseLink(link: String) {
-        val tweetId = TweetParser.getTweetId(link)
-        if (tweetId == null) {
+        if (!TweetParser.isValidTwitterUrl(link)) {
             Toast.makeText(requireContext(), getString(R.string.invalid_link), Toast.LENGTH_SHORT).show()
             return
         }
@@ -89,23 +93,30 @@ class ParseFragment : Fragment() {
 
         CoroutineScope(Dispatchers.IO).launch {
             try {
-                val apiUrl = TweetParser.apiUrl(tweetId)
-                val request = Request.Builder().url(apiUrl).build()
+                val requestBody = TweetParser.buildParseRequestJson(link)
+                val request = Request.Builder()
+                    .url(TweetParser.getParseApiUrl())
+                    .post(requestBody.toRequestBody("application/json".toMediaType()))
+                    .build()
+
                 val response = client.newCall(request).execute()
                 val json = response.body?.string() ?: ""
 
-                val videoUrl = TweetParser.parseAmplifyVideo(json)
-                val tweetText = TweetParser.extractTweetText(json)
+                val result = TweetParser.parseResponse(json)
 
                 withContext(Dispatchers.Main) {
                     binding.progressBar.visibility = View.GONE
                     binding.btnParse.isEnabled = true
 
-                    if (videoUrl != null) {
-                        currentVideoUrl = videoUrl
-                        currentTweetText = tweetText
-                        binding.tvTweetText.text = tweetText.ifEmpty { getString(R.string.video_found) }
-                        binding.tvVideoUrl.text = videoUrl
+                    if (result != null && result.videoUrls.isNotEmpty()) {
+                        currentVideoUrls = result.videoUrls
+                        currentTitle = result.title
+                        currentThumbnail = result.thumbnail
+
+                        val titleText = result.title.ifEmpty { getString(R.string.video_found) }
+                        val qualityInfo = "${result.videoUrls.size} quality options"
+                        binding.tvTweetText.text = "$titleText\n$qualityInfo"
+                        binding.tvVideoUrl.text = result.videoUrls.first().url
                         binding.cardPreview.visibility = View.VISIBLE
                     } else {
                         Toast.makeText(
@@ -130,7 +141,7 @@ class ParseFragment : Fragment() {
     }
 
     private fun startDownload(url: String) {
-        val title = currentTweetText?.take(50) ?: "video_${System.currentTimeMillis()}"
+        val title = currentTitle?.take(50) ?: "video_${System.currentTimeMillis()}"
         binding.btnDownload.isEnabled = false
         binding.btnDownload.text = getString(R.string.downloading)
 
