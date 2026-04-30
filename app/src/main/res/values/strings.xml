@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XMM Video Downloader</string>
+
+    <!-- Navigation -->
+    <string name="nav_parse">Parse</string>
+    <string name="nav_downloads">Downloads</string>
+    <string name="nav_local">Local</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Parse Fragment -->
+    <string name="parse_title">Parse Video</string>
+    <string name="parse_subtitle">Paste an X/Twitter video link to download or play</string>
+    <string name="enter_link">Enter X/Twitter video link</string>
+    <string name="paste">Paste</string>
+    <string name="parse">Parse</string>
+    <string name="video_found">Video Found</string>
+    <string name="play">Play</string>
+    <string name="download">Download</string>
+    <string name="please_enter_link">Please enter a link</string>
+    <string name="invalid_link">Invalid X/Twitter link</string>
+    <string name="no_video_found">No video found in this tweet</string>
+    <string name="network_error">Network error, please try again</string>
+    <string name="downloading">Downloading…</string>
+
+    <!-- Downloads Fragment -->
+    <string name="downloads_title">Downloads</string>
+    <string name="no_downloads">No downloaded videos yet</string>
+    <string name="download_complete">Download complete</string>
+    <string name="download_failed">Download failed</string>
+    <string name="delete">Delete</string>
+    <string name="download_channel_name">Downloads</string>
+    <string name="download_channel_desc">Video download notifications</string>
+
+    <!-- Local Fragment -->
+    <string name="local_title">Local Videos</string>
+    <string name="no_local_videos">No local videos found</string>
+    <string name="permission_needed">Storage permission is needed to browse videos</string>
+    <string name="permission_denied">Permission denied</string>
+
+    <!-- Settings Fragment -->
+    <string name="settings_title">Settings</string>
+    <string name="language">Language</string>
+    <string name="theme_color">Theme Color</string>
+
+    <!-- Player -->
+    <string name="video_player">Video Player</string>
+    <string name="no_video_url">No video URL</string>
+    <string name="playback_error">Playback error</string>
+    <string name="no_more_videos">No more videos</string>
+    <string name="first_video">This is the first video</string>
+    <string name="back">Back</string>
+    <string name="rotate">Rotate</string>
+    <string name="lock">Lock</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="rewind_10s">Rewind 10s</string>
+    <string name="forward_10s">Forward 10s</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="volume">Volume</string>
+    <string name="brightness">Brightness</string>
+    <string name="thumbnail">Thumbnail</string>
+</resources>

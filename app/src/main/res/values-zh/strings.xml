@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XMM 视频下载器</string>
+
+    <string name="nav_parse">解析</string>
+    <string name="nav_downloads">下载</string>
+    <string name="nav_local">本地</string>
+    <string name="nav_settings">设置</string>
+
+    <string name="parse_title">解析视频</string>
+    <string name="parse_subtitle">粘贴 X/Twitter 视频链接以下载或播放</string>
+    <string name="enter_link">输入 X/Twitter 视频链接</string>
+    <string name="paste">粘贴</string>
+    <string name="parse">解析</string>
+    <string name="video_found">找到视频</string>
+    <string name="play">播放</string>
+    <string name="download">下载</string>
+    <string name="please_enter_link">请输入链接</string>
+    <string name="invalid_link">无效的 X/Twitter 链接</string>
+    <string name="no_video_found">该推文中未找到视频</string>
+    <string name="network_error">网络错误，请重试</string>
+    <string name="downloading">下载中…</string>
+
+    <string name="downloads_title">下载列表</string>
+    <string name="no_downloads">暂无已下载视频</string>
+    <string name="download_complete">下载完成</string>
+    <string name="download_failed">下载失败</string>
+    <string name="delete">删除</string>
+    <string name="download_channel_name">下载</string>
+    <string name="download_channel_desc">视频下载通知</string>
+
+    <string name="local_title">本地视频</string>
+    <string name="no_local_videos">未找到本地视频</string>
+    <string name="permission_needed">需要存储权限以浏览视频</string>
+    <string name="permission_denied">权限被拒绝</string>
+
+    <string name="settings_title">设置</string>
+    <string name="language">语言</string>
+    <string name="theme_color">主题颜色</string>
+
+    <string name="video_player">视频播放器</string>
+    <string name="no_video_url">无视频地址</string>
+    <string name="playback_error">播放错误</string>
+    <string name="no_more_videos">没有更多视频了</string>
+    <string name="first_video">这已经是第一个视频了</string>
+    <string name="back">返回</string>
+    <string name="rotate">旋转</string>
+    <string name="lock">锁定</string>
+    <string name="previous">上一个</string>
+    <string name="next">下一个</string>
+    <string name="rewind_10s">快退10秒</string>
+    <string name="forward_10s">快进10秒</string>
+    <string name="play_pause">播放/暂停</string>
+    <string name="volume">音量</string>
+    <string name="brightness">亮度</string>
+    <string name="thumbnail">缩略图</string>
+</resources>

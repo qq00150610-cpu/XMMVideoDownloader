@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XMM Video Downloader</string>
+
+    <string name="nav_parse">Analysieren</string>
+    <string name="nav_downloads">Downloads</string>
+    <string name="nav_local">Lokal</string>
+    <string name="nav_settings">Einstellungen</string>
+
+    <string name="parse_title">Video Analysieren</string>
+    <string name="parse_subtitle">Fügen Sie einen X/Twitter-Videolink ein, um ihn herunterzuladen oder abzuspielen</string>
+    <string name="enter_link">X/Twitter-Videolink eingeben</string>
+    <string name="paste">Einfügen</string>
+    <string name="parse">Analysieren</string>
+    <string name="video_found">Video Gefunden</string>
+    <string name="play">Abspielen</string>
+    <string name="download">Herunterladen</string>
+    <string name="please_enter_link">Bitte geben Sie einen Link ein</string>
+    <string name="invalid_link">Ungültiger X/Twitter-Link</string>
+    <string name="no_video_found">Kein Video in diesem Tweet gefunden</string>
+    <string name="network_error">Netzwerkfehler, bitte erneut versuchen</string>
+    <string name="downloading">Wird heruntergeladen…</string>
+
+    <string name="downloads_title">Downloads</string>
+    <string name="no_downloads">Noch keine heruntergeladenen Videos</string>
+    <string name="download_complete">Download abgeschlossen</string>
+    <string name="download_failed">Download fehlgeschlagen</string>
+    <string name="delete">Löschen</string>
+    <string name="download_channel_name">Downloads</string>
+    <string name="download_channel_desc">Video-Download-Benachrichtigungen</string>
+
+    <string name="local_title">Lokale Videos</string>
+    <string name="no_local_videos">Keine lokalen Videos gefunden</string>
+    <string name="permission_needed">Speicherberechtigung benötigt, um Videos anzuzeigen</string>
+    <string name="permission_denied">Berechtigung verweigert</string>
+
+    <string name="settings_title">Einstellungen</string>
+    <string name="language">Sprache</string>
+    <string name="theme_color">Themenfarbe</string>
+
+    <string name="video_player">Video-Player</string>
+    <string name="no_video_url">Keine Video-URL</string>
+    <string name="playback_error">Wiedergabefehler</string>
+    <string name="no_more_videos">Keine weiteren Videos</string>
+    <string name="first_video">Dies ist das erste Video</string>
+    <string name="back">Zurück</string>
+    <string name="rotate">Drehen</string>
+    <string name="lock">Sperren</string>
+    <string name="previous">Vorheriges</string>
+    <string name="next">Nächstes</string>
+    <string name="rewind_10s">10s zurück</string>
+    <string name="forward_10s">10s vor</string>
+    <string name="play_pause">Abspielen/Pause</string>
+    <string name="volume">Lautstärke</string>
+    <string name="brightness">Helligkeit</string>
+    <string name="thumbnail">Vorschaubild</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XMM ビデオダウンローダー</string>
+
+    <string name="nav_parse">解析</string>
+    <string name="nav_downloads">ダウンロード</string>
+    <string name="nav_local">ローカル</string>
+    <string name="nav_settings">設定</string>
+
+    <string name="parse_title">ビデオ解析</string>
+    <string name="parse_subtitle">X/Twitter のビデオリンクを貼り付けてダウンロードまたは再生</string>
+    <string name="enter_link">X/Twitter ビデオリンクを入力</string>
+    <string name="paste">貼り付け</string>
+    <string name="parse">解析</string>
+    <string name="video_found">ビデオが見つかりました</string>
+    <string name="play">再生</string>
+    <string name="download">ダウンロード</string>
+    <string name="please_enter_link">リンクを入力してください</string>
+    <string name="invalid_link">無効な X/Twitter リンク</string>
+    <string name="no_video_found">このツイートにビデオが見つかりません</string>
+    <string name="network_error">ネットワークエラー、再試行してください</string>
+    <string name="downloading">ダウンロード中…</string>
+
+    <string name="downloads_title">ダウンロード</string>
+    <string name="no_downloads">ダウンロード済みビデオはありません</string>
+    <string name="download_complete">ダウンロード完了</string>
+    <string name="download_failed">ダウンロード失敗</string>
+    <string name="delete">削除</string>
+    <string name="download_channel_name">ダウンロード</string>
+    <string name="download_channel_desc">ビデオダウンロード通知</string>
+
+    <string name="local_title">ローカルビデオ</string>
+    <string name="no_local_videos">ローカルビデオが見つかりません</string>
+    <string name="permission_needed">ビデオを参照するにはストレージ権限が必要です</string>
+    <string name="permission_denied">権限が拒否されました</string>
+
+    <string name="settings_title">設定</string>
+    <string name="language">言語</string>
+    <string name="theme_color">テーマカラー</string>
+
+    <string name="video_player">ビデオプレーヤー</string>
+    <string name="no_video_url">ビデオURLがありません</string>
+    <string name="playback_error">再生エラー</string>
+    <string name="no_more_videos">これ以上のビデオはありません</string>
+    <string name="first_video">これは最初のビデオです</string>
+    <string name="back">戻る</string>
+    <string name="rotate">回転</string>
+    <string name="lock">ロック</string>
+    <string name="previous">前へ</string>
+    <string name="next">次へ</string>
+    <string name="rewind_10s">10秒巻き戻し</string>
+    <string name="forward_10s">10秒早送り</string>
+    <string name="play_pause">再生/一時停止</string>
+    <string name="volume">音量</string>
+    <string name="brightness">明るさ</string>
+    <string name="thumbnail">サムネイル</string>
+</resources>

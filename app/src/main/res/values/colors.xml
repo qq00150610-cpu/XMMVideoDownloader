@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_blue">#1976D2</color>
+    <color name="theme_blue_light">#BBDEFB</color>
+    <color name="theme_blue_dark">#0D47A1</color>
+
+    <color name="theme_purple">#7B1FA2</color>
+    <color name="theme_purple_light">#E1BEE7</color>
+    <color name="theme_purple_dark">#4A148C</color>
+
+    <color name="theme_green">#388E3C</color>
+    <color name="theme_green_light">#C8E6C9</color>
+    <color name="theme_green_dark">#1B5E20</color>
+
+    <color name="theme_orange">#F57C00</color>
+    <color name="theme_orange_light">#FFE0B2</color>
+    <color name="theme_orange_dark">#E65100</color>
+
+    <color name="theme_red">#D32F2F</color>
+    <color name="theme_red_light">#FFCDD2</color>
+    <color name="theme_red_dark">#B71C1C</color>
+
+    <color name="theme_teal">#00796B</color>
+    <color name="theme_teal_light">#B2DFDB</color>
+    <color name="theme_teal_dark">#004D40</color>
+
+    <color name="theme_pink">#C2185B</color>
+    <color name="theme_pink_light">#F8BBD0</color>
+    <color name="theme_pink_dark">#880E4F</color>
+
+    <color name="theme_indigo">#303F9F</color>
+    <color name="theme_indigo_light">#C5CAE9</color>
+    <color name="theme_indigo_dark">#1A237E</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_dark">#212121</color>
+
+    <color name="nav_selected">#1976D2</color>
+    <color name="nav_unselected">#757575</color>
+</resources>

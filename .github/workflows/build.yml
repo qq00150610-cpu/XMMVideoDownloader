@@ -1,0 +1,79 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v4
+
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
+    - name: Generate Gradle Wrapper
+      run: gradle wrapper --gradle-version 8.5
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug
+
+    - name: Build Release APK
+      run: ./gradlew assembleRelease
+
+    - name: Upload Debug APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: XMM-Video-Downloader-Debug
+        path: app/build/outputs/apk/debug/*.apk
+
+    - name: Upload Release APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: XMM-Video-Downloader-Release
+        path: app/build/outputs/apk/release/*.apk
+
+    - name: Create Release
+      if: success()
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v1.0.0
+        name: XMM Video Downloader v1.0.0
+        body: |
+          ## XMM Video Downloader v1.0.0
+
+          ### Features
+          - 🔗 X/Twitter video link parsing
+          - ▶️ Online video playback
+          - 📥 Video downloading with progress
+          - 📂 Local video browsing
+          - 📱 Fullscreen & landscape playback
+          - 🔒 Lock screen playback
+          - ⏩ Fast forward/rewind (double-tap ±10s)
+          - 👆 Gesture controls (brightness & volume)
+          - ⏭ Next/Previous video
+          - 🌍 7 languages (EN/ZH/JA/KO/ES/FR/DE)
+          - 🎨 8 theme colors
+        files: |
+          app/build/outputs/apk/debug/*.apk
+          app/build/outputs/apk/release/*.apk
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

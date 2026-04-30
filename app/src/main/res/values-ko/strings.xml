@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XMM 비디오 다운로더</string>
+
+    <string name="nav_parse">파싱</string>
+    <string name="nav_downloads">다운로드</string>
+    <string name="nav_local">로컬</string>
+    <string name="nav_settings">설정</string>
+
+    <string name="parse_title">비디오 파싱</string>
+    <string name="parse_subtitle">X/Twitter 비디오 링크를 붙여넣어 다운로드 또는 재생</string>
+    <string name="enter_link">X/Twitter 비디오 링크 입력</string>
+    <string name="paste">붙여넣기</string>
+    <string name="parse">파싱</string>
+    <string name="video_found">비디오를 찾았습니다</string>
+    <string name="play">재생</string>
+    <string name="download">다운로드</string>
+    <string name="please_enter_link">링크를 입력하세요</string>
+    <string name="invalid_link">잘못된 X/Twitter 링크</string>
+    <string name="no_video_found">이 트윗에서 비디오를 찾을 수 없습니다</string>
+    <string name="network_error">네트워크 오류, 다시 시도하세요</string>
+    <string name="downloading">다운로드 중…</string>
+
+    <string name="downloads_title">다운로드</string>
+    <string name="no_downloads">다운로드된 비디오가 없습니다</string>
+    <string name="download_complete">다운로드 완료</string>
+    <string name="download_failed">다운로드 실패</string>
+    <string name="delete">삭제</string>
+    <string name="download_channel_name">다운로드</string>
+    <string name="download_channel_desc">비디오 다운로드 알림</string>
+
+    <string name="local_title">로컬 비디오</string>
+    <string name="no_local_videos">로컬 비디오를 찾을 수 없습니다</string>
+    <string name="permission_needed">비디오를 보려면 저장소 권한이 필요합니다</string>
+    <string name="permission_denied">권한이 거부되었습니다</string>
+
+    <string name="settings_title">설정</string>
+    <string name="language">언어</string>
+    <string name="theme_color">테마 색상</string>
+
+    <string name="video_player">비디오 플레이어</string>
+    <string name="no_video_url">비디오 URL이 없습니다</string>
+    <string name="playback_error">재생 오류</string>
+    <string name="no_more_videos">더 이상 비디오가 없습니다</string>
+    <string name="first_video">이것은 첫 번째 비디오입니다</string>
+    <string name="back">뒤로</string>
+    <string name="rotate">회전</string>
+    <string name="lock">잠금</string>
+    <string name="previous">이전</string>
+    <string name="next">다음</string>
+    <string name="rewind_10s">10초 되감기</string>
+    <string name="forward_10s">10초 빨리감기</string>
+    <string name="play_pause">재생/일시정지</string>
+    <string name="volume">볼륨</string>
+    <string name="brightness">밝기</string>
+    <string name="thumbnail">썸네일</string>
+</resources>

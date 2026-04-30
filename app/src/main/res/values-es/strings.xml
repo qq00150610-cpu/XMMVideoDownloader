@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XMM Descargador de Video</string>
+
+    <string name="nav_parse">Analizar</string>
+    <string name="nav_downloads">Descargas</string>
+    <string name="nav_local">Local</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <string name="parse_title">Analizar Video</string>
+    <string name="parse_subtitle">Pega un enlace de video de X/Twitter para descargar o reproducir</string>
+    <string name="enter_link">Ingresa enlace de video de X/Twitter</string>
+    <string name="paste">Pegar</string>
+    <string name="parse">Analizar</string>
+    <string name="video_found">Video Encontrado</string>
+    <string name="play">Reproducir</string>
+    <string name="download">Descargar</string>
+    <string name="please_enter_link">Por favor ingresa un enlace</string>
+    <string name="invalid_link">Enlace de X/Twitter inválido</string>
+    <string name="no_video_found">No se encontró video en este tweet</string>
+    <string name="network_error">Error de red, intenta de nuevo</string>
+    <string name="downloading">Descargando…</string>
+
+    <string name="downloads_title">Descargas</string>
+    <string name="no_downloads">Aún no hay videos descargados</string>
+    <string name="download_complete">Descarga completa</string>
+    <string name="download_failed">Descarga fallida</string>
+    <string name="delete">Eliminar</string>
+    <string name="download_channel_name">Descargas</string>
+    <string name="download_channel_desc">Notificaciones de descarga de video</string>
+
+    <string name="local_title">Videos Locales</string>
+    <string name="no_local_videos">No se encontraron videos locales</string>
+    <string name="permission_needed">Se necesita permiso de almacenamiento para ver videos</string>
+    <string name="permission_denied">Permiso denegado</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="language">Idioma</string>
+    <string name="theme_color">Color del Tema</string>
+
+    <string name="video_player">Reproductor de Video</string>
+    <string name="no_video_url">Sin URL de video</string>
+    <string name="playback_error">Error de reproducción</string>
+    <string name="no_more_videos">No hay más videos</string>
+    <string name="first_video">Este es el primer video</string>
+    <string name="back">Atrás</string>
+    <string name="rotate">Rotar</string>
+    <string name="lock">Bloquear</string>
+    <string name="previous">Anterior</string>
+    <string name="next">Siguiente</string>
+    <string name="rewind_10s">Retroceder 10s</string>
+    <string name="forward_10s">Adelantar 10s</string>
+    <string name="play_pause">Reproducir/Pausar</string>
+    <string name="volume">Volumen</string>
+    <string name="brightness">Brillo</string>
+    <string name="thumbnail">Miniatura</string>
+</resources>

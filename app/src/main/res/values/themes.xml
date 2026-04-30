@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.XMMVideoDownloader" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_blue</item>
+        <item name="colorPrimaryContainer">@color/theme_blue_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_blue_dark</item>
+        <item name="android:statusBarColor">@color/theme_blue_dark</item>
+    </style>
+
+    <style name="AppTheme_Blue" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_blue</item>
+        <item name="colorPrimaryContainer">@color/theme_blue_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_blue_dark</item>
+        <item name="android:statusBarColor">@color/theme_blue_dark</item>
+    </style>
+
+    <style name="AppTheme_Purple" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_purple</item>
+        <item name="colorPrimaryContainer">@color/theme_purple_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_purple_dark</item>
+        <item name="android:statusBarColor">@color/theme_purple_dark</item>
+    </style>
+
+    <style name="AppTheme_Green" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_green</item>
+        <item name="colorPrimaryContainer">@color/theme_green_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_green_dark</item>
+        <item name="android:statusBarColor">@color/theme_green_dark</item>
+    </style>
+
+    <style name="AppTheme_Orange" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_orange</item>
+        <item name="colorPrimaryContainer">@color/theme_orange_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_orange_dark</item>
+        <item name="android:statusBarColor">@color/theme_orange_dark</item>
+    </style>
+
+    <style name="AppTheme_Red" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_red</item>
+        <item name="colorPrimaryContainer">@color/theme_red_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_red_dark</item>
+        <item name="android:statusBarColor">@color/theme_red_dark</item>
+    </style>
+
+    <style name="AppTheme_Teal" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_teal</item>
+        <item name="colorPrimaryContainer">@color/theme_teal_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_teal_dark</item>
+        <item name="android:statusBarColor">@color/theme_teal_dark</item>
+    </style>
+
+    <style name="AppTheme_Pink" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_pink</item>
+        <item name="colorPrimaryContainer">@color/theme_pink_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_pink_dark</item>
+        <item name="android:statusBarColor">@color/theme_pink_dark</item>
+    </style>
+
+    <style name="AppTheme_Indigo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/theme_indigo</item>
+        <item name="colorPrimaryContainer">@color/theme_indigo_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/theme_indigo_dark</item>
+        <item name="android:statusBarColor">@color/theme_indigo_dark</item>
+    </style>
+</resources>
